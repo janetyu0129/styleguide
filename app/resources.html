@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mineweb設計規範</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+</head>
+<header class="navbar-fixed-top">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="menu">
+        <span class="menu-circle"></span>
+        <a href="#" class="menu-link">
+            <span class="menu-icon">
+            <span class="menu-line menu-line-1"></span>
+            <span class="menu-line menu-line-2"></span>
+            <span class="menu-line menu-line-3"></span>
+            </span>
+        </a>
+        <div class="menu-overlay">
+            <div class="overlay-info">
+                <div class="panel-group" id="accordion">
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a href="index.html" class="element underline-opening">
+                                概念總覽 Concept
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a href="animation.html" class="element underline-opening">
+                                動畫 Animation
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="element underline-opening">
+                                風格 Style
+                            </a>
+                        </h4>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="style.html#color">色彩 Color</a></p>
+                                <p><a href="style.html#icons">圖示 Icons</a></p>
+                                <p><a href="style.html#typography">文字庫 Typography</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="element underline-opening">
+                                佈局 Layout
+                            </a>
+                        </h4>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="layout.html#web">網頁 Web</a></p>
+                                <p><a href="layout.html#app">手機 App</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="element underline-opening">
+                                元件 Components
+                            </a>
+                        </h4>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="components.html#inputs">輸入欄位 Inputs</a></p>
+                                <p><a href="components.html#buttons">按鈕 Buttons</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="element underline-opening">
+                                圖片 Patterns
+                            </a>
+                        </h4>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="empty.html">空白狀態 Empty States</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a href="resources.html" class="element underline-opening">
+                                資源 Resources
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <p class="my-h1 bold">資源 Resources</p>
+                <span class="hr"></span>
+                <section>
+                    <p class="my-h3">網頁設計檔下載</p>
+                    <a href="https://s3-ap-northeast-1.amazonaws.com/mineweb/styleguide/mineweb_web_design.sketch" class="link">
+                        https://s3-ap-northeast-1.amazonaws.com/mineweb/styleguide/mineweb_web_design.sketch
+                    </a>
+                </section>
+                <section>
+                    <p class="my-h3">手機設計檔下載</p>
+                    <a href="https://s3-ap-northeast-1.amazonaws.com/mineweb/styleguide/Mineweb_app_design.sketch" class="link">
+                        https://s3-ap-northeast-1.amazonaws.com/mineweb/styleguide/Mineweb_app_design.sketch
+                    </a>
+                </section>
+                <section>
+                    <p class="my-h3">icon設計檔下載</p>
+                    <a href="https://s3-ap-northeast-1.amazonaws.com/mineweb/styleguide/my-icons.sketch" class="link">
+                        https://s3-ap-northeast-1.amazonaws.com/mineweb/styleguide/my-icons.sketch
+                    </a>
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {  
+            $(".menu-link").click(function(e) {
+                e.preventDefault();    
+                $(".menu-overlay").toggleClass("open");
+                $(".menu").toggleClass("open");
+            });
+        });
+    </script>
+</body>
+
+</html>

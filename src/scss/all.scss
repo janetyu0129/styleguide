@@ -1,0 +1,11 @@
+@import "partials/base";
+@import "partials/html";
+@import "partials/typography";
+@import "partials/index";
+@import "partials/header";
+@import "partials/components";
+//vendor
+@import "vendor/css-classes";
+.element {
+    @include transition-opt;
+}

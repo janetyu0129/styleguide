@@ -1,0 +1,95 @@
+body {
+    main {
+        .my-input1 {
+            border-radius: 2px;
+            border: solid 1px $main-color-7;
+            &:focus {
+                border: solid 1px $main-color-1;
+            }
+        }
+        .my-error {
+            border-radius: 2px;
+            border: solid 1px $main-color-9;
+            &:focus {
+                border: solid 1px $main-color-9;
+            }
+        }
+        .disabled {
+            border-radius: 2px;
+            border: solid 1px $main-color-7;
+            &:focus {
+                border: solid 1px $main-color-7;
+            }
+        }
+        .my-input2 {
+            border-radius: 2px;
+            border: solid 1px rgba(31, 31, 31, 0.1);
+            background: rgba(31, 31, 31, 0.1);
+            &:focus {
+                border: solid 1px $main-color-1;
+                background: rgba(31, 31, 31, 0.1);
+            }
+        }
+        .my-error2 {
+            border-radius: 2px;
+            border: solid 1px $main-color-9;
+            background: rgba(31, 31, 31, 0.1);
+            &:focus {
+                border: solid 1px $main-color-9;
+                background: rgba(31, 31, 31, 0.1);
+            }
+        }
+        .my-input3 {
+            border-radius: 0px;
+            border: none;
+            border-bottom: solid 1px $main-color-7;
+            &:focus {
+                border-bottom: solid 2px $main-color-1;
+            }
+        }
+        #buttons {
+            background: #d8d8d8;
+            .btn {
+                width: 100%;
+            }
+            .my-btn1 {
+                border-radius: 2px;
+                background-color: $main-color-1;
+                color: #fff;
+                &:hover {
+                    background-color: darken($main-color-1, 10%);
+                }
+            }
+            .my-btn-error {
+                border-radius: 2px;
+                background-color: $main-color-8;
+                color: #fff;
+                &:hover {
+                    background-color: darken($main-color-8, 10%);
+                }
+            }
+            .my-btn2 {
+                border-radius: 2px;
+                background-color: #fff;
+                color: $main-color-1;
+                &:hover {
+                    border-radius: 2px;
+                    background-color: darken(#fff, 3%);
+                    color: $main-color-1;
+                }
+            }
+            .my-btn3 {
+                border-radius: 2px;
+                border: 2px solid #fff;
+                background-color: transparent;
+                color: #fff;
+                &:hover {
+                    border-radius: 2px;
+                    border: 2px solid #fff;
+                    background-color: transparent;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

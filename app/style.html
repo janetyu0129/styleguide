@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mineweb設計規範</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+</head>
+<header class="navbar-fixed-top">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="menu">
+        <span class="menu-circle"></span>
+        <a href="#" class="menu-link">
+            <span class="menu-icon">
+            <span class="menu-line menu-line-1"></span>
+            <span class="menu-line menu-line-2"></span>
+            <span class="menu-line menu-line-3"></span>
+            </span>
+        </a>
+        <div class="menu-overlay">
+            <div class="overlay-info">
+                <div class="panel-group" id="accordion">
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a href="index.html" class="element underline-opening">
+                                概念總覽 Concept
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a href="animation.html" class="element underline-opening">
+                                動畫 Animation
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="element underline-opening">
+                                風格 Style
+                            </a>
+                        </h4>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="style.html#color">色彩 Color</a></p>
+                                <p><a href="style.html#icons">圖示 Icons</a></p>
+                                <p><a href="style.html#typography">文字庫 Typography</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="element underline-opening">
+                                佈局 Layout
+                            </a>
+                        </h4>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="layout.html#web">網頁 Web</a></p>
+                                <p><a href="layout.html#app">手機 App</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="element underline-opening">
+                                元件 Components
+                            </a>
+                        </h4>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="components.html#inputs">輸入欄位 Inputs</a></p>
+                                <p><a href="components.html#buttons">按鈕 Buttons</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="element underline-opening">
+                                圖片 Patterns
+                            </a>
+                        </h4>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p><a href="empty.html">空白狀態 Empty States</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-panel">
+                        <h4 class="panel-title">
+                            <a href="resources.html" class="element underline-opening">
+                                資源 Resources
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <p class="my-h1 bold">風格 Style</p>
+                <span class="hr"></span>
+                <section>
+                    <ul class="nav nav-pills mb-40">
+                        <li class="nav-item">
+                            <a class="nav-link active my-h4" href="#color" role="tab" data-toggle="tab">色彩 Color</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my-h4" href="#icons" role="tab" data-toggle="tab">圖示 Icons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my-h4" href="#typography" role="tab" data-toggle="tab">文字庫 Typography</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="color" class="tab-pane fade in active">
+                            <section>
+                                <p class="my-h5">主要色系 Main color</p>
+                                <p class="my-p">
+                                    主要色系使用頻率最廣泛，應用在主要裝飾以及主要動作按鈕與連結。
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#58B2DC;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-1</h4>
+                                                <p class="card-text">#58B2DC</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#81C7D4;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-2</h4>
+                                                <p class="card-text">#81C7D4</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <p class="my-h5">次要色系 Secondary color</p>
+                                <p class="my-p">
+                                    次要色系可以使用來指示相關動作或訊息，與主要色系做搭配使用。
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#7DB9DE;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-3</h4>
+                                                <p class="card-text">#7DB9DE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#4E9DC2;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-4</h4>
+                                                <p class="card-text">#4E9DC2</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#0B588D;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-5</h4>
+                                                <p class="card-text">#0B588D</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <p class="my-h5">深色系 Dark color</p>
+                                <p class="my-p">
+                                    深色系使用在需要高對比的環境區塊與背景，或文字內容中。
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#EAEAEA;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-6</h4>
+                                                <p class="card-text">#EAEAEA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#CCCCCC;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-7</h4>
+                                                <p class="card-text">#CCCCCC</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#1F1F1F;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-0</h4>
+                                                <p class="card-text">#1F1F1F</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <p class="my-h5">強調色系 Accent color</p>
+                                <p class="my-p">
+                                    使用在警告、錯誤訊息以及重大決策的按鈕與連結。
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#FF7A4C;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-8</h4>
+                                                <p class="card-text">#FF7A4C</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div style="background-color:#E83015;width:100%;height:120px;"></div>
+                                            <div class="card-block">
+                                                <h4 class="card-title">$main-color-9</h4>
+                                                <p class="card-text">#E83015</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <p class="my-h5">矩形漸層 Gradient</p>
+                                <p class="my-p">
+                                    使用在讀取圖片前的暫代區塊、與登入註冊頁面。
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div style="background: linear-gradient(to bottom, rgba(88,178,220,1) 0%, rgba(129,200,212,1) 100%);height:200px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <p class="my-h5">圖形漸層 Gradient</p>
+                                <p class="my-p">
+                                    若文字疊在圖片上方，則使用此圓形漸層作為凸顯、區隔文字之用。
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div style="background: linear-gradient(to bottom, rgba(178, 229, 220, 0.0), rgba(10, 88, 141, 0.9));height:200px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="icons" class="tab-pane fade">
+                            <section class="mb-60">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p class="my-h5">系統圖示 System icon</p>
+                                        <p class="my-p">
+                                            系統圖士用於表示常見操作，如搜尋、刪除和儲存，以圖示代替文字。
+                                        </p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <img src="images/icon.png" class="img border">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mb-60">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p class="my-h5">設計原則 Design principles</p>
+                                        <p class="my-p bold">
+                                            邊界為4px的幾何形狀所組成
+                                        </p>
+                                        <p class="my-p mb-40">
+                                            邊界設4px是為方便快速辨別，而盡量用幾何形狀如圓形、正方形、長方形、三角形等組成圖示，避免傾斜、旋轉複雜的線條使其立體。
+                                        </p>
+                                        <p class="my-p bold">
+                                            邊界尾端與接合端為弧形
+                                        </p>
+                                        <p class="my-p">
+                                            尾端與接合端以弧度代替尖角，為了呈現柔和的效果。
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/setting.svg" class="img">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/favourite.svg" class="img">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mb-60">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p class="my-h5">製作格線大小</p>
+                                        <p class="my-p bold">
+                                            網頁
+                                        </p>
+                                        <p class="my-p">
+                                            在工作區域區域(灰色)設100px，圖示製作區域(紅色)設80px，的狀態下製作你的圖示。
+                                        </p>
+                                        <p class="my-p bold">
+                                            手機
+                                        </p>
+                                        <p class="my-p">
+                                            在工作區域區域(灰色)設60px，圖示製作區域(紅色)設40px，的狀態下製作你的圖示。
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/p1.svg" class="img border">
+                                        <p class="my-p center">
+                                            網頁
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/p2.svg" class="img border">
+                                        <p class="my-p center">
+                                            手機
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="relate">
+                                <p class="my-h4">參考資料：</p>
+                                <p class="my-h4">
+                                    <a href="https://www.smashingmagazine.com/2016/05/easy-steps-to-better-logo-design/" class="link" target="_blank">
+                                        https://www.smashingmagazine.com/2016/05/easy-steps-to-better-logo-design/
+                                    </a><br>
+                                    <a href="https://www.behance.net/gallery/9028077/google-visual-assets-guidelines-part-1" class="link" target="_blank">
+                                        https://www.behance.net/gallery/9028077/google-visual-assets-guidelines-part-1
+                                    </a><br>
+                                    <a href="https://www.behance.net/gallery/9084309/google-visual-assets-guidelines-part-2" class="link" target="_blank">
+                                        https://www.behance.net/gallery/9084309/google-visual-assets-guidelines-part-2
+                                    </a>
+                                </p>
+                            </section>
+                        </div>
+                        <div id="typography" class="tab-pane fade">
+                            <section>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p class="my-h5">思源黑體 Noto sans CJK</p>
+                                        <p class="my-p mb-40">思源黑體 Noto sans CJK 字型較為方正、無襯線，支援英中日韓各種字體，且是免費的開放原始碼字型，之所以選用。</p>
+                                        <p class="my-h5">字距 Letter-spacing</p>
+                                        <p class="my-p mb-40">letter-spacing: 1.2px;</p>
+                                        <p class="my-h5">行距 Line-height</p>
+                                        <p class="my-p mb-40">line-height: 24px;</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <img src="images/font.png" class="border">
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="my-h5">網頁</p>
+                                        <p class="my-dp-h2">標題 - Type 24px</p>
+                                        <p class="my-dp-h3">副標題 - Type 20px</p>
+                                        <p class="my-dp-h5">內文 - Type 16px</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="my-h5">手機</p>
+                                        <p class="my-dp-h3">標題 - Type 20px</p>
+                                        <p class="my-dp-h4">副標題 - Type 18px</p>
+                                        <p class="my-dp-h5">內文 - Type 16px</p>
+                                        <p class="my-dp-h6">細節 - Type 14px</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="relate">
+                                <p class="my-h4">參考資料：</p>
+                                <p class="my-h4">
+                                    <a href="https://www.google.com/get/noto/help/cjk/" class="link" target="_blank">
+                                        https://www.google.com/get/noto/help/cjk/
+                                    </a><br>
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {  
+            $(".menu-link").click(function(e) {
+                e.preventDefault();    
+                $(".menu-overlay").toggleClass("open");
+                $(".menu").toggleClass("open");
+            });	
+        });
+        
+    </script>
+</body>
+
+</html>

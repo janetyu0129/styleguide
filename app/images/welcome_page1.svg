@@ -1,0 +1,161 @@
+<svg width="375px" height="667px" viewBox="0 0 375 667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="112.057297%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#81C7D4" offset="0%"></stop>
+            <stop stop-color="#58B2DC" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="375" height="667"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-4" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="24" font-weight="normal" letter-spacing="1.79999995" fill="#FFFFFF">
+            <tspan x="75" y="28">智能分類</tspan>
+        </text>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.290196078   0 0 0 0 0.290196078   0 0 0 0 0.290196078  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.290196078   0 0 0 0 0.290196078   0 0 0 0 0.290196078  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.290196078   0 0 0 0 0.290196078   0 0 0 0 0.290196078  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.290196078   0 0 0 0 0.290196078   0 0 0 0 0.290196078  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <style>
+    #title1 {
+        transform: translateY(200px);
+        animation: show-text 1s ease-out forwards;
+    }
+    
+    #content1 {
+        transform: translateY(200px);
+        animation: show-text 1s .1s ease-out forwards;
+    }
+    
+    #p1 {
+        transform: translate(-1000px, -500px);
+        animation: show-p1 4s .3s ease-out forwards;
+    }
+    
+    #p2 {
+        transform: translate(1000px, -500px);
+        animation: show-p2 4s .2s ease-out forwards;
+    }
+    
+    #p3 {
+        transform: translate(-1000px, -500px);
+        animation: show-p3 4s ease-out forwards;
+    }
+    
+    @-webkit-keyframes show-text {
+        0% {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    
+    @-webkit-keyframes show-p1 {
+        0% {
+            transform: translate(-1000px, -500px);
+            opacity: 0;
+        }
+        80% {
+            transform: translate(40px, 200px) rotate(4deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(70px, 200px) rotate(0deg);
+        }
+    }
+    
+    @-webkit-keyframes show-p2 {
+        0% {
+            transform: translate(1000px, -500px);
+            opacity: 0;
+        }
+        80% {
+            transform: translate(115px, 120px) rotate(-14deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(70px, 185px) rotate(0deg) scale(0.85);
+        }
+    }
+    
+    @-webkit-keyframes show-p3 {
+        0% {
+            transform: translate(-1000px, -500px);
+            opacity: 0;
+        }
+        80% {
+            transform: translate(0px, 0px) rotate(14deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(70px, 170px) rotate(0deg) scale(0.95);
+        }
+    }
+    </style>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="welcome_page1">
+            <g id="bg">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="introduce" transform="translate(60.000000, 470.000000)" fill="#FFFFFF">
+                <g id="title1" fill-opacity="1">
+                    <use filter="url(#filter-5)" xlink:href="#text-4"></use>
+                    <use xlink:href="#text-4"></use>
+                </g>
+                <text id="content1" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="18" font-weight="normal" line-spacing="27" letter-spacing="1.5">
+                    <tspan x="0" y="77">將上傳的照片做智能與有效的</tspan>
+                    <tspan x="0" y="104">分類，解決照片找不到的問題</tspan>
+                </text>
+            </g>
+            <g id="p3" filter="url(#filter-6)" transform="translate(114.027624, 114.448035) rotate(14.000000) translate(-114.027624, -114.448035) translate(-10.972376, 20.448035)">
+                <rect id="Rectangle-8" stroke="#FFFFFF" stroke-width="10" x="0" y="0" width="250" height="187.250996" rx="8"></rect>
+                <rect id="Rectangle-8" fill="#FFFFFF" x="11" y="11" width="228" height="165.75" rx="2"></rect>
+                <path d="M77.25,163.666667 L77,164 L227,164 L152,64 L100.625,132.5 L74,97 L24,163.666667 L77.25,163.666667 L77.25,163.666667 Z M45.5,67 C57.3741221,67 67,57.3741221 67,45.5 C67,33.6258779 57.3741221,24 45.5,24 C33.6258779,24 24,33.6258779 24,45.5 C24,57.3741221 33.6258779,67 45.5,67 L45.5,67 Z" id="Combined-Shape" fill="#CCCCCC" style="mix-blend-mode: multiply;"></path>
+            </g>
+            <g id="p2" filter="url(#filter-7)" transform="translate(297.027624, 168.208035) scale(-1, 1) rotate(14.000000) translate(-297.027624, -168.208035) translate(167.027624, 70.448035)">
+                <rect id="Rectangle-8" stroke="#0B588D" stroke-width="10" x="0" y="0" width="260" height="194.741036" rx="8"></rect>
+                <rect id="Rectangle-8" fill="#0B588D" x="11.44" y="11.44" width="237.12" height="172.38" rx="2"></rect>
+                <path d="M80.34,170.213333 L80.08,170.56 L236.08,170.56 L158.08,66.56 L104.65,137.8 L76.96,100.88 L24.96,170.213333 L80.34,170.213333 L80.34,170.213333 Z M47.32,69.68 C59.669087,69.68 69.68,59.669087 69.68,47.32 C69.68,34.970913 59.669087,24.96 47.32,24.96 C34.970913,24.96 24.96,34.970913 24.96,47.32 C24.96,59.669087 34.970913,69.68 47.32,69.68 L47.32,69.68 Z" id="Combined-Shape" fill="#CCCCCC" style="mix-blend-mode: multiply;"></path>
+            </g>
+            <g id="p1" filter="url(#filter-8)" transform="translate(123.002092, 268.992464) scale(-1, 1) rotate(-4.000000) translate(-123.002092, -268.992464) translate(23.002092, 193.792464)">
+                <rect id="Rectangle-8" stroke="#4E9DC2" stroke-width="10" x="0" y="0" width="200" height="149.800797" rx="8"></rect>
+                <rect id="Rectangle-8" fill="#4E9DC2" x="8.8" y="8.8" width="182.4" height="132.6" rx="2"></rect>
+                <path d="M61.8,130.933333 L61.6,131.2 L181.6,131.2 L121.6,51.2 L80.5,106 L59.2,77.6 L19.2,130.933333 L61.8,130.933333 L61.8,130.933333 Z M36.4,53.6 C45.8992977,53.6 53.6,45.8992977 53.6,36.4 C53.6,26.9007023 45.8992977,19.2 36.4,19.2 C26.9007023,19.2 19.2,26.9007023 19.2,36.4 C19.2,45.8992977 26.9007023,53.6 36.4,53.6 L36.4,53.6 Z" id="Combined-Shape" fill="#CCCCCC" style="mix-blend-mode: multiply;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

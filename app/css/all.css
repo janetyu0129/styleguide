@@ -1,0 +1,516 @@
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+header a:hover, header a:focus {
+  text-decoration: none;
+}
+
+body {
+  font-family: NotoSansCJKtc;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #1f1f1f;
+  background-color: #ffffff;
+  top: 80px;
+}
+body h4 {
+  font-size: 1rem;
+}
+
+.my-h1 {
+  font-size: 36px;
+  letter-spacing: 1.2px;
+  color: #0B588D;
+}
+
+.my-h2 {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  color: #0B588D;
+}
+
+.my-dp-h2 {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  color: #1f1f1f;
+}
+
+.my-h3 {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: #0B588D;
+}
+
+.my-dp-h3 {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: #1f1f1f;
+}
+
+.my-h4 {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: #0B588D;
+}
+
+.my-dp-h5 {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  color: #1f1f1f;
+}
+
+.my-h5 {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  color: #0B588D;
+}
+
+.my-dp-h4 {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: #1f1f1f;
+}
+
+.my-p {
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  color: #1f1f1f;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body main {
+  padding: 120px 40px 40px;
+}
+body main .hr {
+  display: block;
+  width: 120px;
+  border-bottom: 3px solid #0B588D;
+  margin: 10px 0 20px 0;
+}
+body main .center {
+  text-align: center;
+}
+body main .border {
+  border: 1px solid #eaeaea;
+}
+body main .mb-20 {
+  margin-bottom: 20px;
+}
+body main .mb-40 {
+  margin-bottom: 40px;
+}
+body main .mb-60 {
+  margin-bottom: 60px;
+}
+body main .pad-20 {
+  padding: 20px;
+}
+body main .img {
+  width: 100%;
+}
+body main .relate {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 20px;
+  word-break: break-all;
+}
+body main .link {
+  color: #0B588D;
+}
+body main .link:hover {
+  text-decoration: underline;
+}
+body main section {
+  margin: 40px 0;
+}
+body main section a.nav-link.active.my-h4,
+body main section a.nav-link.active:focus.my-h4 {
+  background-color: #58B2DC;
+}
+body main section a.nav-link.active:hover.my-h4 {
+  background-color: #2e9fd3;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  padding: 26px;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px 50px #eaeaea;
+}
+header img {
+  height: 100%;
+}
+header .menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 46px;
+  width: 46px;
+}
+header .menu:hover .menu-circle {
+  transform: scale(1.4);
+}
+header .menu.open .menu-line-1 {
+  transform: translateY(7px) translateY(-50%) rotate(-45deg);
+}
+header .menu.open .menu-line-2 {
+  opacity: 0;
+}
+header .menu.open .menu-line-3 {
+  transform: translateY(-7px) translateY(50%) rotate(45deg);
+}
+header .menu.open .menu-circle {
+  /*background-color: transparent;*/
+  transform: scale(10);
+  transition: transform 0.3s ease-in-out;
+}
+header .menu .menu-circle {
+  background-color: #58b2dc;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: 1031;
+  transition: transform 0.3s ease-in-out;
+}
+header .menu .menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1033;
+}
+header .menu .menu-link .menu-icon {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+header .menu .menu-link .menu-icon .menu-line {
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+}
+header .menu .menu-link .menu-icon .menu-line-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .menu .menu-link .menu-icon .menu-line-3 {
+  bottom: 0;
+}
+header .menu .menu-overlay {
+  background: linear-gradient(to top, #81c7d4, #58b2dc);
+  color: #333;
+  height: 100%;
+  width: 380px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1032;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 60px;
+}
+header .menu .menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+header .menu .menu-overlay .overlay-info {
+  text-align: left;
+  color: #fff;
+}
+header .menu .menu-overlay .overlay-info .my-panel {
+  margin-bottom: 40px;
+}
+header .menu .menu-overlay .overlay-info .my-panel .panel-body {
+  padding: 15px 15px 0;
+}
+
+body main .my-input1 {
+  border-radius: 2px;
+  border: solid 1px #cccccc;
+}
+body main .my-input1:focus {
+  border: solid 1px #58B2DC;
+}
+body main .my-error {
+  border-radius: 2px;
+  border: solid 1px #E83015;
+}
+body main .my-error:focus {
+  border: solid 1px #E83015;
+}
+body main .disabled {
+  border-radius: 2px;
+  border: solid 1px #cccccc;
+}
+body main .disabled:focus {
+  border: solid 1px #cccccc;
+}
+body main .my-input2 {
+  border-radius: 2px;
+  border: solid 1px rgba(31, 31, 31, 0.1);
+  background: rgba(31, 31, 31, 0.1);
+}
+body main .my-input2:focus {
+  border: solid 1px #58B2DC;
+  background: rgba(31, 31, 31, 0.1);
+}
+body main .my-error2 {
+  border-radius: 2px;
+  border: solid 1px #E83015;
+  background: rgba(31, 31, 31, 0.1);
+}
+body main .my-error2:focus {
+  border: solid 1px #E83015;
+  background: rgba(31, 31, 31, 0.1);
+}
+body main .my-input3 {
+  border-radius: 0px;
+  border: none;
+  border-bottom: solid 1px #cccccc;
+}
+body main .my-input3:focus {
+  border-bottom: solid 2px #58B2DC;
+}
+body main #buttons {
+  background: #d8d8d8;
+}
+body main #buttons .btn {
+  width: 100%;
+}
+body main #buttons .my-btn1 {
+  border-radius: 2px;
+  background-color: #58B2DC;
+  color: #fff;
+}
+body main #buttons .my-btn1:hover {
+  background-color: #2e9fd3;
+}
+body main #buttons .my-btn-error {
+  border-radius: 2px;
+  background-color: #FF7A4C;
+  color: #fff;
+}
+body main #buttons .my-btn-error:hover {
+  background-color: #ff5419;
+}
+body main #buttons .my-btn2 {
+  border-radius: 2px;
+  background-color: #fff;
+  color: #58B2DC;
+}
+body main #buttons .my-btn2:hover {
+  border-radius: 2px;
+  background-color: #f7f7f7;
+  color: #58B2DC;
+}
+body main #buttons .my-btn3 {
+  border-radius: 2px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+body main #buttons .my-btn3:hover {
+  border-radius: 2px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+/* defaults for transition-opt */
+/* defaults for line-opt */
+/* defaults for transitions */
+/* default delay */
+/* defaults for typograhpy element */
+/* color when element is NOT hovered. */
+/* UNDERLINES */
+.underline-closing:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 2px;
+}
+.underline-closing:hover:after, .underline-closing:focus:after {
+  width: 50%;
+  height: 2px;
+}
+.underline-closing:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 2px;
+}
+.underline-closing:hover:before, .underline-closing:focus:before {
+  width: 50%;
+  height: 2px;
+}
+.underline-closing:after {
+  bottom: 0%;
+  left: 0%;
+}
+.underline-closing:before {
+  bottom: 0%;
+  right: 0%;
+}
+
+.underline-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 2px;
+}
+.underline-left:hover:after, .underline-left:focus:after {
+  width: 100%;
+  height: 2px;
+}
+.underline-left:after {
+  right: 0%;
+  bottom: 0;
+}
+
+.underline-opening:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 2px;
+}
+.underline-opening:hover:after, .underline-opening:focus:after {
+  width: 100%;
+  height: 2px;
+}
+.underline-opening:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 2px;
+}
+.underline-opening:hover:before, .underline-opening:focus:before {
+  width: 100%;
+  height: 2px;
+}
+.underline-opening:after {
+  bottom: 0%;
+  left: 0%;
+  right: 0;
+  margin: 0 auto;
+}
+.underline-opening:before {
+  bottom: 0%;
+  right: 0%;
+  left: 0;
+  margin: 0 auto;
+}
+
+.underline-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 2px;
+  height: 2px;
+}
+.underline-right:hover:after, .underline-right:focus:after {
+  width: 100%;
+  height: 2px;
+}
+.underline-right:after {
+  left: 0;
+  bottom: 0;
+}
+
+.element {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  /* backward transition */
+  /* backward transition */
+}
+.element:hover, .element:focus {
+  outline: 0;
+  color: #0B588D;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+.element:before {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.element:after {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.element:hover:after, .element:focus:after {
+  outline: 0;
+  background-color: #0B588D;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.element:hover:before, .element:focus:before {
+  outline: 0;
+  background-color: #0B588D;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="200" viewBox="0 0 610 200">
+    <defs>
+        <filter id="a" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feOffset dx="-1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+            <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="0%" y1="0%" y2="100%">
+            <stop stop-color="#6ABDE4" offset="0%" />
+            <stop stop-color="#52A4CB" offset="100%" />
+        </linearGradient>
+    </defs>
+    <style>
+    #top {
+        animation-name: floatdown;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+    #bottom {
+        animation-name: floatup;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+    @-webkit-keyframes floatdown {
+        50% {
+            transform: translate(0px, 10px);
+        }
+    }
+    
+    @-webkit-keyframes floatup {
+        50% {
+            transform: translate(0px, -10px);
+        }
+    }
+    </style>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(20 20)">
+        <polygon fill="#4E9DC2" points="0 20 20 0 20 140 0 160" />
+        <polygon fill="url(#b)" points="0 20 70 130 90 110 20 0" />
+        <polygon fill="#4E9DC2" points="70 130 140 20 160 0 90 110" />
+        <polygon fill="#58B2DC" points="140 20 160 0 160 140 140 160" />
+        <polygon fill="#58B2DC" points="210 20 230 0 230 140 210 160" />
+        <g transform="translate(280)">
+            <polygon fill="#4E9DC2" points="0 20 20 0 20 140 0 160" />
+            <polygon fill="url(#b)" points="0 20 100 160 120 140 20 0" />
+            <polygon fill="#58B2DC" points="100 20 120 0 120 140 100 160" />
+        </g>
+        <g transform="translate(450)">
+            <polygon id="top" fill="#7DB9DE" points="20 0 120 0 100 20 0 20" />
+            <polygon fill="#58B2DC" points="20 70 120 70 100 90 0 90" />
+            <polygon id="bottom" fill="#81C7D4" points="20 140 120 140 100 160 0 160" />
+        </g>
+    </g>
+</svg>

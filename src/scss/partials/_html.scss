@@ -1,0 +1,22 @@
+header {
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $base-font-color;
+    background-color: $base-background-color;
+    top: $header-height;
+    h4 {
+        font-size: 1rem;
+    }
+}

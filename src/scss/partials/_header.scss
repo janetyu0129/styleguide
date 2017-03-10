@@ -1,0 +1,116 @@
+header {
+    height: $header-height;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 26px;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 50px #eaeaea;
+    img {
+        height: 100%;
+    }
+    .menu {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 46px;
+        width: 46px;
+        &:hover {
+            .menu-circle {
+                transform: scale(1.4);
+            }
+        }
+        &.open {
+            .menu-line-1 {
+                transform: translateY(7px) translateY(-50%) rotate(-45deg);
+            }
+            .menu-line-2 {
+                opacity: 0;
+            }
+            .menu-line-3 {
+                transform: translateY(-7px) translateY(50%) rotate(45deg);
+            }
+            .menu-circle {
+                /*background-color: transparent;*/
+                transform: scale(10);
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+        .menu-circle {
+            background-color: #58b2dc;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 50%;
+            transform: scale(1);
+            z-index: 1031;
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-link {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1033;
+            .menu-icon {
+                position: absolute;
+                width: 20px;
+                height: 14px;
+                margin: auto;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 1px;
+                .menu-line {
+                    background-color: #fff;
+                    height: 2px;
+                    width: 100%;
+                    border-radius: 2px;
+                    position: absolute;
+                    left: 0;
+                    transition: all 0.25s ease-in-out;
+                }
+                .menu-line-2 {
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                .menu-line-3 {
+                    bottom: 0;
+                }
+            }
+        }
+        .menu-overlay {
+            background: linear-gradient(to top, #81c7d4, #58b2dc);
+            color: #333;
+            height: 100%;
+            width: 380px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            transition: opacity 0.2s ease-in-out;
+            z-index: 1032;
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 60px;
+            &.open {
+                opacity: 1;
+                visibility: visible;
+            }
+            .overlay-info {
+                text-align: left;
+                color: #fff;
+                .my-panel {
+                    margin-bottom: 40px;
+                    .panel-body {
+                        padding: 15px 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}

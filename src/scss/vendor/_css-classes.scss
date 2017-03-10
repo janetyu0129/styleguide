@@ -1,0 +1,19 @@
+@import 'effects';
+
+/* UNDERLINES */
+
+.underline-closing {
+  @include underline-closing;
+}
+
+.underline-left {
+  @include underline-left;
+}
+
+.underline-opening {
+  @include underline-opening;
+}
+
+.underline-right {
+  @include underline-right;
+}

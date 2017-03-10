@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="a" x1="50%" x2="50%" y1="-5.352%" y2="119.2%">
+      <stop stop-color="#FFFFFF" offset="0%"/>
+      <stop stop-color="#F5F5F5" offset="100%"/>
+    </linearGradient>
+    <filter id="b" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset dx="-2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="180" height="180" fill="url(#a)" rx="40"/>
+    <g filter="url(#b)" transform="translate(40 24)">
+      <polygon fill="#7DB9DE" points="16.667 0 100 0 83.333 16.625 0 16.625"/>
+      <polygon fill="#58B2DC" points="16.667 58.188 100 58.188 83.333 74.813 0 74.813"/>
+      <polygon fill="#81C7D4" points="16.667 116.375 100 116.375 83.333 133 0 133"/>
+    </g>
+  </g>
+</svg>
